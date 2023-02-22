@@ -18,6 +18,7 @@ website_descr = "Example website using Franklin"
 website_url   = "https://tlienart.github.io/FranklinTemplates.jl/"
 +++
 
+@def prepath = ""
 @def website_title = "Overoxidized" 
 @def website_url = "https://overoxidized.github.io/overoxidized"
 <!--
