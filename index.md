@@ -3,21 +3,28 @@
 
 # Overoxidized
 
+overoxidized is an individual with a penchant programming, and mathematical physics, and general intellectual expedition. This is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
+
+
 \tableofcontents <!-- you can use \toc as well -->
 
 
-overoxidized is an individual with a penchant programming, and mathematical physics, and general intellectual expedition. This is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
-
-## (Functional) Programming: 
+## (Functional) Programming 
 - [Rust](/tag/rust/)
 - [Lisp](/tag/lisp).
+- [C](/tag/C)
 
-## Textbooks
+## Textbook Notes
 
 [Structures In Computer Programming](/tag/structures-in-computer-programming/)
 
 
 [Linear Algebra Done Right](/tag/linear-algebra-done-right/)
+
+
+## Notes on Academic Papers
+
+ljashdaksj
 
 
 ## The base with Markdown
@@ -57,7 +64,7 @@ or have tables:
 
 Note that you may have to do a bit of CSS-styling to get these elements to look the way you want them (the same holds for the whole page in fact).
 
-### Symbols and html entities
+- Symbols and html entities
 
 If you want a dollar sign you have to escape it like so: \$, you can also use html entities like so: &rarr; or &pi; or, if you're using Juno for instance, you can use `\pi[TAB]` to insert the symbol as is: π (it will be converted to a html entity).[^1]
 
@@ -70,9 +77,9 @@ Footnotes are nice too:
 [^1]: this is the text for the first footnote, you can style all this looking at `.fndef` elements; note that the whole footnote definition is _expected to be on the same line_.
 [^blah]: and this is a longer footnote with some blah from veggie ipsum: turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
 
-## Basic Franklin extensions
+- Basic Franklin extensions
 
-### Divs
+- Divs
 
 It is sometimes useful to have a short way to make a part of the page belong to a div so that it can be styled separately.
 You can do this easily with Franklin by using `@@divname ... @@`.
@@ -131,7 +138,7 @@ It's probably easier to see this in action:
 * with: \pathwith{script.jl}, there's a whitespace you don't want 🚫
 * without: \pathwithout{script.jl} here there isn't ✅
 
-### Raw HTML
+- Raw HTML
 
 You can include raw HTML by just surrounding a block with `~~~`.
 Not much more to add.

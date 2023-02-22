@@ -1,6 +1,6 @@
 +++
-title = "Crust's Device"
-tags = ["rust"]
+title = "Proof of Subspaces"
+tags = ["mathematics", "linear algebra"]
 +++
 
 Suppose $U_1$ and $U_2$ are subspaces of $V$. Prove that $U_1 \cap U_2$ is a subspace of $V$.
