@@ -1,17 +1,21 @@
-@def title = "Franklin Example"
+@def title = "Overoxidized"
 @def tags = ["syntax", "code"]
 
 # Overoxidized
 
 \tableofcontents <!-- you can use \toc as well -->
 
-This section is meant as a refresher if you're new to Franklin.
-Have a look at both how the website renders and the corresponding markdown (`index.md`).
-Modify at will to get a feeling for how things work!
 
-Ps: if you want to modify the header or footer or the general look of the website, adjust the files in
-* `src/_css/` and
-* `src/_html_parts/`.
+overoxidized is an individual with a penchant programming, and mathematical physics, and general intellectual expedition. This is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
+
+## (Functional) Programming: 
+- [Rust](/tag/rust/)
+- [Lisp](/tag/lisp).
+
+## Textbooks
+
+[Structures In Computer Programming](/tag/structures-in-computer-programming/)
+
 
 ## The base with Markdown
 
@@ -77,7 +81,7 @@ Here we go! (this is styled in the css sheet with name "colbox-blue").
 
 Since it's just a `<div>` block, you can put this construction wherever you like and locally style your text.
 
-### LaTeX and Maths
+- LaTeX and Maths
 
 Essentially three things are imitated from LaTeX
 
@@ -110,7 +114,7 @@ Here's another quick one, a command to change the color:
 
 This is \col{blue}{in blue} or \col{#bf37bc}{in #bf37bc}.
 
-### A quick note on whitespaces
+- A quick note on whitespaces
 
 For most commands you will use `#k` to refer to the $k$-th argument as in LaTeX.
 In order to reduce headaches, this forcibly introduces a whitespace on the left of whatever is inserted which, usually, changes nothing visible (e.g. in a math settings).
@@ -166,7 +170,7 @@ Here are a few empty pages connecting to the menu links to show where files can 
 * [posts](/posts/)
 * [menu 2](/menu2/)
 * [menu 3](/menu3/)
-* [Crust's Device](/crusts-device/)
+* [Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/).
 
 ## References (not really)
 

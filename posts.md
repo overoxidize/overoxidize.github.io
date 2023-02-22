@@ -12,9 +12,9 @@ tags = ["syntax", "code"]
 
 \toc
 
-[physics](/tag/physics/)
+[physics](/tag/physics)
 
-[Crust's Device](/crusts-device/)
+[Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/).
 
 [Does Time Really Flow?](/does-time-really-flow/)
 <!-- ## Live evaluation of code blocks
