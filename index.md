@@ -17,6 +17,9 @@ overoxidized is an individual with a penchant programming, and mathematical phys
 [Structures In Computer Programming](/tag/structures-in-computer-programming/)
 
 
+[Linear Algebra Done Right](/tag/linear-algebra-done-right/)
+
+
 ## The base with Markdown
 
 The [standard markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) can be used such as titles using `#`, lists:

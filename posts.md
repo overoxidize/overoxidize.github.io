@@ -14,7 +14,7 @@ tags = ["syntax", "code"]
 
 [physics](/tag/physics)
 
-[Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/).
+[Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
 
 [Does Time Really Flow?](/does-time-really-flow/)
 <!-- ## Live evaluation of code blocks
