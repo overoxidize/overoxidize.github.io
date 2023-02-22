@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://overoxidized.github.io/overoxidized/posts/index.html</loc>
+    <loc>https://overoxidized.github.io/overoxidized/proof-of-subspaces/index.html</loc>
     <lastmod>2023-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://overoxidized.github.io/overoxidized/crusts-device/index.html</loc>
+    <loc>https://overoxidized.github.io/overoxidized/posts/index.html</loc>
     <lastmod>2023-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,6 +39,12 @@
 </url>
 <url>
     <loc>https://overoxidized.github.io/overoxidized/menu1/index.html</loc>
+    <lastmod>2023-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://overoxidized.github.io/overoxidized/structures-in-computer-programming/sicp/index.html</loc>
     <lastmod>2023-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
