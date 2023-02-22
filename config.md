@@ -19,7 +19,7 @@ website_url   = "https://tlienart.github.io/FranklinTemplates.jl/"
 +++
 
 @def website_title = "Overoxidized" 
-@def website_url = "https://overoxidized.github.io/"
+@def website_url = "https://overoxidized.github.io/overoxidized"
 <!--
 Add here global latex commands to use throughout your pages.
 -->
