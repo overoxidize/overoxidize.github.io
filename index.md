@@ -1,6 +1,6 @@
 @def title = "Overoxidized"
 @def tags = ["syntax", "code"]
-
+@def lang = "rust"
 # Overoxidized
 
 overoxidized is an individual with a penchant programming, and mathematical physics, and general intellectual expedition. This is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
@@ -36,7 +36,7 @@ The [standard markdown syntax](https://github.com/adam-p/markdown-here/wiki/Mark
 
 or code-blocks `inline` or with highlighting (note the `@def hascode = true` in the source to allow [highlight.js](https://highlightjs.org/) to do its job):
 
-```julia
+```Rust
 abstract type Point end
 struct PointR2{T<:Real} <: Point
     x::T
