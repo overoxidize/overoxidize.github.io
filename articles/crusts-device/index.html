@@ -1,0 +1,68 @@
+<!doctype html> <html lang=en > <link rel=stylesheet  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css"> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/languages/go.min.js"></script> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/tufte.css"> <link rel=stylesheet  href="/css/latex.css"> <link rel=stylesheet  href="/css/tachyons.css"> <link rel=stylesheet  href="/css/adjust.css"> <link rel=icon  href="/assets/favicon.png"> <title>Crust's Device</title> <div id=layout > <div id=menu > <ul> <li><a href="/">Home</a> <li><a href="https://github.com/overoxidize">GH</a> <li><a href="/menu2/">More goodies</a> <li><a href="/menu3/">Tags</a> <li><a href="/posts/">Posts</a> </ul> </div> <div id=main > <div class=franklin-content > <div class=franklin-toc ><ol><li><a href="#overview">Overview</a><li><a href="#analyzing_the_code">Analyzing The Code</a><li><a href="#crusts_device_c_-_rust">Crust&#39;s Device: C -&gt; Rust</a><li><a href="#footnotes">Footnotes</a></ol></div> <h2 id=overview ><a href="#overview" class=header-anchor >Overview</a></h2> <p>From the beginning of my foray into programming, I&#39;ve been pretty intrigued by one of the most well-known, and controversial pieces of code ever written:</p> <div class="dark-pink f2 bold avenir pa1 center relative">Duff&#39;s Device.</div> <p>The history behind it actually starts at the intersection of two cornerstones of nerd/geek culture: programming, and Lucasfilm. </p> <p>In 1983, Tom Duff was working for the film studio, possibly the subsidiary known as ILM- Industrial Light &amp; Magic, on an animation program, using the Evans &amp; Sutherland Picture System II, and discovered that there was a bottle-neck in the program, which was hindering the speed at which it could process the necessary data.</p> <p>According to Tom, the original loop &#40;shown below&#41;, was a bottle-neck for the animation play-back program<sup id="fnref:1"><a href="#fndef:1" class=fnref >[1]</a></sup>, that was resulting in a 50&#37; decrease in the speed at which the program executed.</p> <h2 id=analyzing_the_code ><a href="#analyzing_the_code" class=header-anchor >Analyzing The Code</a></h2> <p>The original loop:</p> <pre><code class="C hljs">send(to, from, count)
+    <span class=hljs-keyword >register</span> <span class=hljs-type >short</span> *to, *from;
+    <span class=hljs-keyword >register</span> count;
+    {
+        <span class=hljs-keyword >do</span>
+            *to = *from++;
+        <span class=hljs-keyword >while</span>(--count&gt;<span class=hljs-number >0</span>);
+    }</code></pre> <p>Tom Duff states that the Vax C compiler, compiles the original loop into a movw, and a sobleq, instructions in assembly language: movw copies the data from the first operand, to the second operand, which are both registers, i.e <code>movw &#37;CS 5&#40;&#37;ebx&#41;</code>, and sobleq, an operation similar to subleq<sup id="fnref:2"><a href="#fndef:2" class=fnref >[2]</a></sup>, which takes three arguments, all memory addresses, and subtracts the data in the second operand, from the the data in the second operand, storing the result in the address of the second operand, and jumping to the memory address in the third operand, if the value stored in the second operand is less than or equal to zero.</p> <p>The idea that lead to the in&#40;genius/famous&#41; piece of code, was borne out of Tom&#39;s in depth understanding of C and assembly, which both allowed him to percieve the limitation inherent in the situation, and subsequently surpass it. The loop as written, compiled to assembly, that had an unecessary number of sobleq instructions- or at least a number that could be decreased with some sophisticated technical optimization.</p> <pre><code class="C hljs">send(to, from, count)
+	<span class=hljs-keyword >register</span> <span class=hljs-type >short</span> *to, *from;
+	<span class=hljs-keyword >register</span> count;
+	{
+		<span class=hljs-keyword >register</span> n=(count+<span class=hljs-number >7</span>)/<span class=hljs-number >8</span>;
+		<span class=hljs-keyword >switch</span>(count%<span class=hljs-number >8</span>){
+		<span class=hljs-keyword >case</span> <span class=hljs-number >0</span>:	<span class=hljs-keyword >do</span>{	*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >7</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >6</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >5</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >4</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >3</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >2</span>:		*to = *from++;
+		<span class=hljs-keyword >case</span> <span class=hljs-number >1</span>:		*to = *from++;
+			}<span class=hljs-keyword >while</span>(--n&gt;<span class=hljs-number >0</span>);
+		}
+	}</code></pre> <p>Here&#39;s the same code, in terms of funcionality, with the while loop and the switch statement separated from each other.</p> <pre><code class="C hljs">send(to, from, count)
+<span class=hljs-keyword >register</span> <span class=hljs-type >short</span> *to, *from;
+<span class=hljs-keyword >register</span> count;
+{
+    <span class=hljs-keyword >register</span> n = (count + <span class=hljs-number >7</span>) / <span class=hljs-number >8</span>;
+    <span class=hljs-keyword >switch</span> (count % <span class=hljs-number >8</span>) {
+        <span class=hljs-keyword >case</span> <span class=hljs-number >0</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >7</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >6</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >5</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >4</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >3</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >2</span>: *to = *from++;
+        <span class=hljs-keyword >case</span> <span class=hljs-number >1</span>: *to = *from++;
+    }
+    <span class=hljs-keyword >while</span> (--n &gt; <span class=hljs-number >0</span>) {
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+        *to = *from++;
+    }
+}</code></pre> <h2 id=crusts_device_c_-_rust ><a href="#crusts_device_c_-_rust" class=header-anchor >Crust&#39;s Device: C -&gt; Rust</a></h2> <p>So, in my desire to get Rustier, and become a <code>bit-whiz</code>, I decided to try and port this famous bit of C code to Rust<sup id="fnref:3"><a href="#fndef:3" class=fnref >[3]</a></sup></p> <pre><code class="Rust hljs"><span class=hljs-keyword >let</span> (*<span class=hljs-keyword >mut</span> to, *<span class=hljs-keyword >mut</span> from, count) = (<span class=hljs-type >u32</span>, <span class=hljs-type >u32</span>, <span class=hljs-type >u32</span>);
+
+<span class=hljs-keyword >fn</span> <span class="hljs-title function_">send</span>(to: *<span class=hljs-keyword >mut</span> T, from *<span class=hljs-keyword >mut</span> T, count: <span class=hljs-type >u32</span>) {
+
+    <span class=hljs-keyword >let</span> <span class=hljs-variable >n</span> = (count + <span class=hljs-number >7</span>) / <span class=hljs-number >8</span>;
+    <span class="hljs-title function_ invoke__">while</span> (n &gt; <span class=hljs-number >0</span>) {
+        n -= <span class=hljs-number >1</span>
+        <span class="hljs-title function_ invoke__">match</span> (count % <span class=hljs-number >8</span>) {
+            case_0 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_7 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_6 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_5 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_4 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_3 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_2 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+            case_1 =&gt; { *to = (*from += <span class=hljs-number >1</span>)},
+        }
+
+        todo!()
+}</code></pre> <h2 id=footnotes ><a href="#footnotes" class=header-anchor >Footnotes</a></h2> <p><table class=fndef  id="fndef:1"> <tr> <td class=fndef-backref ><a href="#fnref:1">[1]</a> <td class=fndef-content ><a href="https://www.lysator.liu.se/c/duffs-device.html">Tom Duff on Duff&#39;s Device</a> </table> <table class=fndef  id="fndef:2"> <tr> <td class=fndef-backref ><a href="#fnref:2">[2]</a> <td class=fndef-content >The term used in the above email was <code>sobleq</code>, which I&#39;ve changed to subleq, making a comfortable assumption due to the similarity of the instructions, that they&#39;re effectively the same, and for familiarity to modern readers- however I did find a text file containing the <a href="https://pdp-11.ru/simh_trailing-edge_com/semi/docs/cvaxudoc.txt">CVAX CPU Chip Microcode Documentation</a>, from the PDP-11, dated ~4 years after the invention of Duff&#39;s Device, containing what I believe is the actual instruction he was referencing. I&#39;m not familiar enough with assembly to be certain they are the same, but in the documentation <code>sobleq</code> takes two arguments, and branching is mentioned &#40;in terms of cycle cost&#41;, so I&#39;m acceptably comfortable with this bit of technical/historical innacuracy. If anyone can explain the instruction&#40;s&#41; with a bit more detail, I can be reached at overoxidized@protonmail.com, and will update this article with credit given, of course. </table> <table class=fndef  id="fndef:3"> <tr> <td class=fndef-backref ><a href="#fnref:3">[3]</a> <td class=fndef-content ><a href="https://www.drdobbs.com/a-reusable-duff-device/184406208">Duff Code Pseudo</a> </table> </p> <div class=page-foot > <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Septimia Zenobia. Last modified: February 26, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> </div> </div> <script src="/libs/highlight/highlight.min.js"></script> <script>hljs.highlightAll();hljs.configure({tabReplace: ' '});</script>
