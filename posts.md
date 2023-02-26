@@ -13,14 +13,11 @@ tags = ["syntax", "code"]
 
 [physics](/tag/physics)
 
-[Does Time Really Flow](/does-time-really-flow/)
-
-
-[A Brief Introduction to Time in Physics](/a-brief-intro-time-physics/)
-
-[Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
-
-[Does Time Really Flow?](/does-time-really-flow/)
+### [Crust's Device](/articles/crusts-device/)
+### [A Brief Introduction to Time in Physics](articles/a-brief-intro-time-physics/)
+### [Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
+### [Does Time Really Flow?](/does-time-really-flow/)
+### [Embarking Into Systems](/articles/embarking-into-systems/)
 <!-- ## Live evaluation of code blocks
 
 If you would like to show code as well as what the code outputs, you only need to specify where the script corresponding to the code block will be saved.

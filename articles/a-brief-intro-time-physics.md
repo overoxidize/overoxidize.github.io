@@ -6,7 +6,7 @@ tags = ["A Brief Introduction to Time in Physics", "time","physics"]
 
 \toc
 
-In preparation for the next [Olympia Academy](https://twitter.com/TheOlympiAcad) event via [The Interintellect](Link), entitled [Running Out of Time: The Temporal Dimension](https://www.eventbrite.co.uk/e/running-out-of-time-the-temporal-dimension-interintellect-salon-tickets-126725374005), I thought it might be useful to give a brief rundown on some of the ways we work with time in Physics.
+In preparation for the next [Olympia Academy](https://twitter.com/TheOlympiAcad) (now defunct) event via [The Interintellect](Link), entitled [Running Out of Time: The Temporal Dimension](https://www.eventbrite.co.uk/e/running-out-of-time-the-temporal-dimension-interintellect-salon-tickets-126725374005), I thought it might be useful to give a brief rundown on some of the ways we work with time in Physics.
 
 I think one of the key issues with solving the mystery of time, is that we don't have very much going for us in the way of classifying it as a phenomenon: we talk about time relative to other things, in the same way that we only visualize 2D space, *as embedded in 3D space*- not the thing itself, but a reconstruction -however it is nonetheless the starting point that we have, and we've done wonderful things with it as a species, so it merits some observation I think, for what it has done, regardless of what it hasn't.
 

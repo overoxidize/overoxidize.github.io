@@ -18,8 +18,12 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: var(--normal);
   color: var(--text-color);
+  width: 100vw
 }
 
+.franklin-content p {
+  width: 40vw;
+}
 /* ==================================================================
     BASIC GRID FOR PROFILE PIC
 ================================================================== */
@@ -184,6 +188,7 @@ td {
 /* Spacing between bullet points. */
 .franklin-content li p {
   margin: 10px 0;
+  width: 60% !important;
 }
 
 .franklin-content a {
