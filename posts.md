@@ -14,7 +14,7 @@ tags = ["syntax", "code"]
 [physics](/tag/physics)
 
 ### [Crust's Device](/articles/crusts-device/)
-### [A Brief Introduction to Time in Physics](articles/a-brief-intro-time-physics/)
+### [A Brief Introduction to Time in Physics](/articles/a-brief-intro-time-physics/)
 ### [Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
 ### [Does Time Really Flow?](/does-time-really-flow/)
 ### [Embarking Into Systems](/articles/embarking-into-systems/)
