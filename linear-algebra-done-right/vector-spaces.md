@@ -125,6 +125,10 @@ This following line holds, due to the commutativity of addition in $\mathbb{F}$.
 * $(y_1 \ldots y_n) + (x_1 \ldots x_n) =$
 * $y + x\;\;\;\ $ $ \blacksquare.$
 
-## Chapter 1 Exercises
+## Chapter 1.A Exercises
+[Find A Four-Tuple That Satisfies The Equation](/linear-algebra-done-right/find-four-tuple-satisfying-equation/)
+## Chapter 1.C Exercises
+
 
 [Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
+[]
