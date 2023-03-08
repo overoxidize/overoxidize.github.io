@@ -131,4 +131,3 @@ This following line holds, due to the commutativity of addition in $\mathbb{F}$.
 
 
 [Proof the Union of Subspaces of V is a Subspace of V](/proof-of-subspaces/)
-[]

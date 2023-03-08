@@ -3,7 +3,7 @@
 @def lang = "rust"
 # Overoxidized (Under Construction).
 
-overox is an individual with a penchant for programming (typically functional), and mathematical physics, and general intellectual expedition. Overox*idized* is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
+Overox is an individual with a (programming (for (penchant)))(typically functional), and mathematical physics, and general intellectual expedition. Overox*idized* is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
 
 This place will probably be stub/styling/formatting hell for *a while/ever*.
 
