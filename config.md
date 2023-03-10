@@ -20,7 +20,7 @@ website_url   = "https://tlienart.github.io/FranklinTemplates.jl/"
 
 @def hascode = true
 @def prepath = ""
-@def website_title = "Overoxidized" 
+@def website_title = "0xhound" 
 @def website_url = "https://overoxidized.github.io/overoxidized"
 <!--
 Add here global latex commands to use throughout your pages.

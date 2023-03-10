@@ -1,9 +1,8 @@
-@def title = "Overoxidized"
+@def title = "0xhound"
 @def tags = ["syntax", "code"]
 @def lang = "rust"
-# Overoxidized (Under Construction).
 
-Overox is an individual with a (programming (for (penchant)))(typically functional), and mathematical physics, and general intellectual expedition. Overox*idized* is his blog, wherein he will rant about the things that interest him, as if they are the most interesting things in the world- _because they are_.
+# Def. $\mathcal{f}$0xhound: A blog, wherein I will study, learn, rant and experiment about/with the things that interest him, as if they are the most interesting things in the world- _because they are_.
 
 This place will probably be stub/styling/formatting hell for *a while/ever*.
 
@@ -18,15 +17,15 @@ This place will probably be stub/styling/formatting hell for *a while/ever*.
 ## Textbook Notes
 
 ### Math Textbooks
-#### [Linear Algebra Done Right](/linear-algebra-done-right/contents/)
+#### [Linear Algebra Done Right](/textbook-notes/math-textbooks/linear-algebra-done-right/contents/)
 
 ### Programming Textbooks
-#### [Structures In Computer Programming](/tag/structures-in-computer-programming/)
+#### [Structures In Computer Programming](/textbook-notes/programming-textbooks/structures-in-computer-programming/)
 
-#### [Common Lisp Object System](/clos/contents/)
+#### [Common Lisp Object System](/textbook-notes/programming-textbooks/clos/contents/)
 
 ### Physics Textbooks
-#### [The Principles of Quantum Mechanics](/the-principles-of-qm/contents/)
+#### [The Principles of Quantum Mechanics](/textbook-notes/physics-textbooks/the-principles-of-qm/contents/)
 
 
 
