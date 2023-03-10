@@ -18,6 +18,7 @@ This place will probably be stub/styling/formatting hell for *a while/ever*.
 
 ### Math Textbooks
 #### [Linear Algebra Done Right](/textbook-notes/math-textbooks/linear-algebra-done-right/contents/)
+#### [Spivak's Calculus](/textbook-notes/math-textbooks/spivak-calculus/contents/)
 
 ### Programming Textbooks
 #### [Structures In Computer Programming](/textbook-notes/programming-textbooks/structures-in-computer-programming/)
@@ -27,10 +28,14 @@ This place will probably be stub/styling/formatting hell for *a while/ever*.
 ### Physics Textbooks
 #### [The Principles of Quantum Mechanics](/textbook-notes/physics-textbooks/the-principles-of-qm/contents/)
 
+#### [John Taylor's Classical Mechanics](/textbook-notes/physics-textbooks/john-taylor-cm/contents/)
 
 
-## Notes On Academic Papers: [Notes](/notes-on-academic-papers/content/)
+
+## Notes On Academic Papers: 
+
+### [Notes](/notes-on-academic-papers/content/)
 
 ## Lecture Notes
 
-[Geometrical Anatomy of Theoretical Physics](/geometrical-anatomy-of-theoretical-physics/contents/)
+### [Geometrical Anatomy of Theoretical Physics](/geometrical-anatomy-of-theoretical-physics/contents/)
