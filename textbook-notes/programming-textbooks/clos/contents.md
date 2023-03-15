@@ -4,4 +4,4 @@ tags = ["lisp", "programming"]
 +++
 
 
-[Introduction To CLOS](/clos/intro-to-clos/)
+[Introduction To CLOS](/programming-textbooks/clos/intro-to-clos/)
