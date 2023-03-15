@@ -4,6 +4,6 @@ tags = ["physics"]
 +++
 
 
-[The Principle of Superposition](/physics-textbooks/the-principles-of-qm/the-principle-of-superposition/)
+[The Principle of Superposition](/textbook-notes/physics-textbooks/the-principles-of-qm/the-principle-of-superposition/)
 
-[Dynamical Variables And Observables](/physics-textbooks/the-principles-of-qm/dynamical-variables-and-observables/)
+[Dynamical Variables And Observables](/textbook-notes/physics-textbooks/the-principles-of-qm/dynamical-variables-and-observables/)
