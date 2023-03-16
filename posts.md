@@ -1,5 +1,5 @@
 +++
-title = "Code Blocks"
+title = "Posts"
 hascode = true
 
 
@@ -13,7 +13,7 @@ tags = ["syntax", "code"]
 
 
 ### [A Brief Introduction to Time in Physics](/articles/a-brief-intro-time-physics/)
-### [Proof the Union of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/)
+### [Proof the Intersection of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/)
 ### [Does Time Really Flow?](/does-time-really-flow/)
 ### [Embarking Into Systems](/articles/embarking-into-systems/)
 <!-- ## Live evaluation of code blocks
