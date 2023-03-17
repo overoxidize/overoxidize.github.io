@@ -104,6 +104,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/the-rust-book/getting-started/index.html</loc>
+    <lastmod>2023-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://overoxidized.github.io/overoxidized/menu1/index.html</loc>
     <lastmod>2023-03-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -122,7 +128,19 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/the-rust-book/understanding-ownership/index.html</loc>
+    <lastmod>2023-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/clos/elements-of-clos/index.html</loc>
+    <lastmod>2023-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/the-rust-book/contents/index.html</loc>
     <lastmod>2023-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -170,6 +188,12 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/the-rust-book/programming-a-guessing-game/index.html</loc>
+    <lastmod>2023-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://overoxidized.github.io/overoxidized/solving-linear-equations/index.html</loc>
     <lastmod>2023-03-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -183,6 +207,12 @@
 </url>
 <url>
     <loc>https://overoxidized.github.io/overoxidized/articles/crusts-device/index.html</loc>
+    <lastmod>2023-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://overoxidized.github.io/overoxidized/textbook-notes/programming-textbooks/the-rust-book/common-programming-concepts/index.html</loc>
     <lastmod>2023-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
