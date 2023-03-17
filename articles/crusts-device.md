@@ -94,7 +94,7 @@ register count;
 
 ## Crust's Device: C -> Rust
 
-So, in my desire to get Rustier, and become a `bit-whiz`, I decided to try and port this famous bit of C code to Rust[^3]
+So, in my desire to get understand Rust better, I decided to try and port this famous bit of C code to Rust[^3]
 ```Rust
 
 let (*mut to, *mut from, count) = (u32, u32, u32);
@@ -119,6 +119,7 @@ fn send(to: *mut T, from *mut T, count: u32) {
 }
 ```
 
+Alright, so the code doesn't look too different, but there will most certainly be some interesting opinions from the type system.
 ## Footnotes
 
 [^1]: [Tom Duff on Duff's Device](https://www.lysator.liu.se/c/duffs-device.html)

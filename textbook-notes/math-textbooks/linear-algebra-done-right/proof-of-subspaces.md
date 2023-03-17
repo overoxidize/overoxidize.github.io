@@ -33,9 +33,3 @@ Since $U_3 = U_1 \cap U_2$ satisfies conditions __1__, __2__ and __3__, of being
 Assuming $u, w \in U_1$ and $u, v \in U_2$:
         The fact that $u + w, u + v \notin U_3 =U_1 \cap U_2$, doesn't violate the conditions for being a subspace, since the definition of closure under addition requires $v, w \in U_3$, which would contradict the definition of intersection, and $U_3$ is an intersection.
         The fact that $av, aw \notin U_3$, for some $a \in \mathbb{F}$ doesn't violate the conditions because the definition of closure under scalar multiplication again requires $v, w \in U_3$, which again contradicts the definition of intersection. This also means that the lack of an additive inverse for $v, w$ in $U_3$ doesn't violate the conditions for being a subspace, because the additive inverse of $v$, $-v = (-1)v$, which is just scalar multiplication, and even if we wanted to use addition, say $v + (-2v)$, we'd still need $v \in U_3$, which we already ruled out.
-
-Suppose $U$ is a subspace of $V$. What is $U+U$?
-
-My claim is $U+U = \{ (au_1, \ldots, au_m): u_j \in U, for\; j = 1, \ldots m, a = 2\}$. 
-
-$$U+U = ((u_1, \ldots, u_m) + (u_1, \ldots, u_m)).$$

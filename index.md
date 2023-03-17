@@ -1,6 +1,4 @@
 @def title = "0xhound"
-@def tags = ["syntax", "code"]
-@def lang = "rust"
 
 # Def. $\mathcal{f}$0xhound: A blog, wherein I will study, learn, rant and experiment about/with the things that interest him, as if they are the most interesting things in the world- _because they are_.
 
@@ -9,14 +7,15 @@ This place will probably be stub/styling/formatting hell for *a while/ever*, as 
 \tableofcontents <!-- you can use \toc as well -->
 
 
-## Programming 
+### Programming 
 - [Rust](/tag/rust/)
 - [Lisp](/tag/lisp).
 - [C](/tag/C)
 
-## Textbook Notes
+# Textbook Notes
 
 ### Math Textbooks
+
 #### [Linear Algebra Done Right](/textbook-notes/math-textbooks/linear-algebra-done-right/contents/)
 #### [Spivak's Calculus](/textbook-notes/math-textbooks/spivak-calculus/contents/)
 
@@ -30,12 +29,10 @@ This place will probably be stub/styling/formatting hell for *a while/ever*, as 
 
 #### [John Taylor's Classical Mechanics](/textbook-notes/physics-textbooks/john-taylor-cm/contents/)
 
+#### [Structure and Interpretation of Classical Mechanics](/textbook-notes/physics-textbooks/structures-in-classical-mechanics/lagrangian-mechanics/)
+---
 
+### [Notes On Academic Papers](/notes-on-academic-papers/content/)
+### Lecture Notes
 
-## Notes On Academic Papers: 
-
-### [Notes](/notes-on-academic-papers/content/)
-
-## Lecture Notes
-
-### [Geometrical Anatomy of Theoretical Physics](/geometrical-anatomy-of-theoretical-physics/contents/)
+#### [Geometrical Anatomy of Theoretical Physics](/geometrical-anatomy-of-theoretical-physics/contents/)

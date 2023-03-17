@@ -101,3 +101,8 @@ Def. A proof of a proposition in an axiomatic system $a_1, a_2,..., a_n$, is a f
 (T) $q_j$ is a tautology (always true).
 
 (M) $\exists 1 \leq m,n \lt j : (q_m \land q_n \implies q_j)$ is true.
+
+If proposition $\mathcal{P}$ is provable within the system, $a_1, \ldots, a_n$, we say $a_1, \ldots, a_n \vdash \mathcal{P}$, or this sequence *proves* $\mathcal{P}$.
+
+Consistency of axiomatic systems depends on there being propositions that weren't provable in the system, due to the issue of ex falso quodlibet, which allows
+us to prove anything, given the right false starting point, and the fact that things aren't provable relies on there being no contradictory axioms.

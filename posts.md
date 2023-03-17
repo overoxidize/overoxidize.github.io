@@ -1,5 +1,5 @@
 +++
-title = "Posts"
+title = "Posts & Notes"
 hascode = true
 
 
@@ -11,11 +11,19 @@ tags = ["syntax", "code"]
 
 \toc
 
+## Posts
 
 ### [A Brief Introduction to Time in Physics](/articles/a-brief-intro-time-physics/)
+### [Embarking Into Systems](/articles/embarking-into-systems/)
+
+## Notes
+
 ### [Proof the Intersection of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/)
 ### [Does Time Really Flow?](/does-time-really-flow/)
-### [Embarking Into Systems](/articles/embarking-into-systems/)
+
+### [Systems of Linear Equations](/solving-linear-equations/)
+
+## Miscellanea
 <!-- ## Live evaluation of code blocks
 
 If you would like to show code as well as what the code outputs, you only need to specify where the script corresponding to the code block will be saved.
