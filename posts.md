@@ -16,6 +16,8 @@ tags = ["syntax", "code"]
 ### [A Brief Introduction to Time in Physics](/articles/a-brief-intro-time-physics/)
 ### [Embarking Into Systems](/articles/embarking-into-systems/)
 
+### [On The (Abridged) History of Linux](/articles/abridged-history-linux/)
+
 ## Notes
 
 ### [Proof the Intersection of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/)
