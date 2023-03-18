@@ -23,7 +23,7 @@ This place will probably be stub/styling/formatting hell for *a while/ever*, as 
 #### [Spivak's Calculus](/textbook-notes/math-textbooks/spivak-calculus/contents/)
 
 ### Programming Textbooks
-#### [Structures In Computer Programming](/textbook-notes/programming-textbooks/structures-in-computer-programming/)
+#### [Structures In Computer Programming](/textbook-notes/programming-textbooks/structures-in-computer-programming/contents/)
 
 #### [Common Lisp Object System](/textbook-notes/programming-textbooks/clos/contents/)
 
