@@ -7,10 +7,10 @@ This place will probably be stub/styling/formatting hell for *a while/ever*, as 
 \tableofcontents <!-- you can use \toc as well -->
 
 
-### Programming 
-- [Rust](/tag/rust/)
+**Programming**
+- [Rust](/tag/rust/).
 - [Lisp](/tag/lisp).
-- [C](/tag/C)
+- [C](/tag/C).
 
 ### Lecture Notes
 
