@@ -5,7 +5,9 @@ tags = ["rust", "programming"]
 
 #### Setting Up A New Project:
 
-To generate a new Rust project use the following command: `cargo new <project-name>`.
+To generate a new Rust project use the following command: 
+
+`cargo new <project-name>`.
 
 ### New Rust projects will have a minimal Cargo.[toml]([[Toms Ordinary Markup Language) file.
 
@@ -23,8 +25,7 @@ edition = "2018"
 ```
 
 
-
-### Processing A Guess:
+#### Processing A Guess:
 
 ```Rust use std::io;
 
@@ -54,13 +55,15 @@ You can declare a variable with the `let` keyword, and make it mutable with the 
 
 The `::new()` syntax indicates that an associated function that exists on a type is being called. `new` exists on mosts types, for creating new values of certain times.
 
+#### Receiving Input
+
 Using std::io allows us to access code from the module that allows us to deal with input an output, and it provides the Read and Write traits, which can be implemented in other types.
 
 The `read_line(&mut guess)` line helps us read the input from out terminal, the stdin, and it allows us to store that input in our mutable variable, which we indicate is a reference to a mutable variable with the `&mut` syntax.
 
 References in Rust are perhaps similar but not exactly like references in the context of 'pass by reference', but they allow multiple parts of code to access a datum without copying it into memory each time.
 
-The `read_line` function returns a value, of the type #io::Result.
+The `read_line` function returns a value, of the type io::Result.
 
 **__Result__** types are __enums__, meaning they can be one of a discrete, finite set of values, which are referred to as __variants__.
 
@@ -68,11 +71,11 @@ The `Result` variants, are `Ok`, and `Err`.
 
 `Ok`, indicates the operation was successful, `Err` contains information on how/why it wasn't.
 
-Instances of `io::Result` have `expect` methods that can be called, causing the program to crash and display your message.
+Instances of `Result` have `expect` methods that can be called, causing the program to crash and display your message.
 
 If the value is `Ok`, `expect` will simply return it to you.
 
-## Using Crates to Get More Functionality:
+#### Using Crates to Get More Functionality:
 
 Crates are collections of Rust source, and this project is a __binary__ crate, intended to be an executable, but there are also library crates, such as `rand`, which are intended to be used in building binary crates.
 
@@ -88,7 +91,7 @@ The **__Cargo.lock__** file is for producing builds that can run on other comput
 
 `cargo update` will update all of the out of date dependencies in your Cargo.toml file, but 
 
-## Comparing Guesses:
+#### Comparing Guesses:
 
 ```Rust use rand::Rng;
 use std::cmp::Ordering;
@@ -107,8 +110,6 @@ fn main() {
 }```
 
 In this code, we use the :: syntax to bring types outside of the scope of the prelude into local scope for use.
-
-Note that we haven't used #[macrouse] in order to expose any macros. :P
 
 `Ordering`, is an enum, meaning it "contains" several variants, (more technically, can be of the type of one of several variants), which are `Greater`, `Less`, and `Equal`.
 

@@ -52,8 +52,66 @@ A foundational tool in programming is naming, by which a variable is associated 
 (define (circumference radius)
     (* 2 pi radius))
 ```
-```lisp
-(defun)
+
+
+Define is the fundamental tool for abstraction, and allows for referring to complex operations with simple symbols. Computational objects can be complex, and having to remember implementation details every time we want to use them, would be unfeasible.
+
+Because the interpreter is required to keep track of and retrieve symbol associated values, it requires a memory, of sorts, which is typicalled called the environment, and computation can involve a number of these.
+
+#### 1.1.3 Evaluating Combinations
+
+When evaluating combinations, the interpreter evaluates sub-expressions, and applies the value of the left-most sub-expr, typically the operator, to the other sub-expr's, which are typically operands.
+
+The evaluation rule is recursive, or having the ability to refer to itself in one of its steps.
+
+```scheme 
+(* (+ 2 (* 4 6))
+    (+ 3 5 7))
+```
+The evaluation of this code can be represented in a n-ary tree, given that there isn't a limit on the number of sub-expr's a given expression can have, based on the way the interpreter works through applying operations to operands, starting from the terminal nodes, with the results of operations being passed upwards- this is often referred to as tree accumulation.
+
+The evaluation of primitives is as follows:
+
+- Values of numerals are just that number.
+- Values of built-in operators are the associated machine code.
+- The values of other names are the objects associated with them in that environment.
+  
+The environment plays an important role in assessing the meaning of expressions, as it provides a context in which evaluation can take place.
+
+There are exceptions to the evaluation rule, which are the special forms:
+
+```scheme 
+(define x 3)
 ```
 
-Source code itself is not an explanation for what the code does: try writing the program in a conditional flattened, linear way, in english, and then observe the difference.
+The interpreter doesn't apply define to 3, and `x`, as the role of the keyword is to associate the two as a value and a name.
+
+Each special form has its own evaluation rule.
+
+#### 1.1.4 Compound Procedures
+
+Procedure definitions, are an even more powerful method of abstracting that we can take advantage of, because they allow for the naming of compound operations:
+
+```scheme
+(define (square x) (* x x))
+```
+
+This is a compound procedure, that multiplies something by itself, which will be the named argument defined in the procedure, and some associated value.
+
+Generally procedures need a name, a list of formal parameters, and a body, describing what should be done with the list of formal parameters, and that will yield the result of that computation.
+
+Because we can refer to the square operation, we can use it as a building block for a more involved procedure, like sum-of-squares:
+
+```scheme
+(define (sum-of-squares x y)
+    (+ (square x) (square y)))
+```
+
+And again:
+
+```scheme
+(define (f a )
+    (sum-of-squares (+ a 1) (* a 2)))
+```
+
+TBD: 1.1.5 The Substitution Model for Procedure Application

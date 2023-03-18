@@ -45,17 +45,17 @@ The next four lines (2-5), set the config info Cargo needs to compile a program-
 
 In #Rust, packages of code are called crates.  
 
-### __Use__ `cargo build` __to build your program.__
+__Use__ `cargo build` __to build your program.__
 
 This command generates an executable file.
 
 The first time you run the build command, a Cargo.lock file is generated to keep track of dependency versioning.
 
-### __Use__ `cargo run` __to compile and run the resulting executable in consecutively.__
+__Use__ `cargo run` __to compile and run the resulting executable in consecutively.__
 
 Cargo can tell if source files have changed, and will not attempt to rebuild a program with an existing binary if the source code hasn't changed.
 
-### __Use__ `cargo check` to __make sure your code will compile (without generating an executable).__
+__Use__ `cargo check` to __make sure your code will compile (without generating an executable).__
 
-### When your project is ready for release, use `cargo build --release` to compile it with optimizations.
+When your project is ready for release, use `cargo build --release` to compile it with optimizations.
 
