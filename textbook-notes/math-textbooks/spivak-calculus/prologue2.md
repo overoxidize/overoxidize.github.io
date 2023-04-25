@@ -18,10 +18,10 @@ An example of induction is a formula that provides the sum of the first $n$ numb
 $1 + \ldots + 1 = \frac{n(n+1)}{2}$.
 
 In order to prove this is true, we first show that it holds for $n=1$.
-    - ### $\frac{1(1+1)}{2} = 1$.
+  -  $\frac{1(1+1)}{2} = 1$.
 
 Now, we assume for some $k, k \in N$, we have: $1 + \ldots + k = \frac{k(k+1)}{2}$.
 
-Then $\\1 + \ldots + k + (k+1) =\\[3pt] \frac{k(k+1)}{2} + (k+1) =\\[5pt] \frac{k(k+1) + 2k + 2}{2} =\\[5pt]  \frac{k^2 + 3k+2}{2} =\\[5pt] \frac{(k+1)(k+2)}{2}$
+Then $\\1 + \ldots + k + (k+1) =\\[3pt] \frac{k(k+1)}{2} + (k+1) =\\[7pt] \frac{k(k+1) + 2k + 2}{2} =\\[5pt]  \frac{k^2 + 3k+2}{2} =\\[5pt] \frac{(k+1)(k+2)}{2}$
 
 The inductive principle can be shown without reference to numerical properties, more precisely, if $A$ is a set and $1 \in A$, as well as $k+1 \in A$, if $k \in A$,  $A = \N$.

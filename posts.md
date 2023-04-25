@@ -9,7 +9,6 @@ tags = ["syntax", "code"]
 
 <!-- # Working with code blocks -->
 
-\toc
 
 ## Posts
 

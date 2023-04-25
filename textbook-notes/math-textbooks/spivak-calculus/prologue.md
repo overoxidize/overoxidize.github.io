@@ -168,3 +168,43 @@ which means $0 - a = -a \in P$, and since the same holds for $b$, partially as a
 From the fact that $-a \gt 0$ if $a \lt 0$, we can define the absolute value function: 
 
 $|a| = a,\; \text{if}\;a \geq 0, -a,\; \text{if} \;a \leq 0$.
+
+Now we can prove a fact about absolute values.
+
+
+### Theorem 1:
+
+We have, for all $a ,b$, that $|a+b| \leq |a| + |b|$.
+
+### Proof
+
+This proof will be laid out casewise, i.e, we prove this holds for:
+
+(1): $a \geq 0, b \geq 0$.
+(2): $a \geq 0, b \leq 0$.
+(3): $a \leq 0, b \geq 0$.
+(4): $a \leq 0, b \geq 0$.
+
+For case (1), we have $a + b \geq 0$, which is obvious, as:
+
+- $|a + b| = a + b = |a| + |b|$.
+
+For case (2), where $a \geq 0, b \leq 0$, we have to prove that $|a + b| \leq a -b$.
+
+We can divide it into the following subcases:
+
+- $a + b \geq 0$, which requires $a + b \leq a -b \implies b \leq -b$.
+
+This holds true, as $b \leq 0$, which means $-b \geq 0$.
+
+- $a + b \leq 0$, which requires $-a - b \leq a - b$.
+
+This holds true, as $a \geq 0$, which means $-b \leq 0$.
+
+For case (3), we simply take $a$ and $b$, and swap them in case (2).
+
+For case (4), we see $a + b \leq 0$, and see that equality holds:
+
+- $|a + b| =\\ -(a + b) =\\ -a + (-b) =\\ |a| + |b|$.
+
+Overall, equality will hold if $a, b, \in P,\; \text{or if} -a, -b \in P$, or if one is $0$, while inequality will hold if they're of opposite sign.
