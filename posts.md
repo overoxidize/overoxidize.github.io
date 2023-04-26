@@ -24,6 +24,10 @@ tags = ["syntax", "code"]
 
 ### [Systems of Linear Equations](/solving-linear-equations/)
 
+### [Why Functional Programming Matters](/why-fp-matters/)
+
+### [Pijul Theory](/pijul-theory/)
+
 ## Miscellanea
 <!-- ## Live evaluation of code blocks
 

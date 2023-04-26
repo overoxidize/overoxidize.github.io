@@ -29,11 +29,12 @@ This place will probably be stub/styling/formatting hell for *a while/ever*, as 
 
   - #### [The (Rust) Book](/textbook-notes/programming-textbooks/the-rust-book/contents/)
 - ## Physics Textbooks
-#### [The Principles of Quantum Mechanics](/textbook-notes/physics-textbooks/the-principles-of-qm/contents/)
+  - #### [The Principles of Quantum Mechanics](/textbook-notes/physics-textbooks/the-principles-of-qm/contents/)
 
-- #### [John Taylor's Classical Mechanics](/textbook-notes/physics-textbooks/john-taylor-cm/contents/)
+  - #### [John Taylor's Classical Mechanics](/textbook-notes/physics-textbooks/john-taylor-cm/contents/)
 
-- #### [Structure and Interpretation of Classical Mechanics](/textbook-notes/physics-textbooks/structures-in-classical-mechanics/lagrangian-mechanics/)
----
+  - #### [Structure and Interpretation of Classical Mechanics](/textbook-notes/physics-textbooks/structures-in-classical-mechanics/lagrangian-mechanics/)
 
+- ## DSP Textbooks
+  - #### [Structure And Interpretation of Signals And Systems](/structures-in-signal-processing-and-systems/contents/)
 # [Notes On Academic Papers](/notes-on-academic-papers/content/)
