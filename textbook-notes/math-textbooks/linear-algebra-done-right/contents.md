@@ -9,4 +9,4 @@ Ch.1: Exercises
 
 - [Find A 4-tuple That Satisifies The Equation](/textbook-notes/math-textbooks/linear-algebra-done-right/find-four-tuple-satisfying-equation/) 
   
-- [Proof the Union of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/).
+- [Proof the Intersection of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/).
