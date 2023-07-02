@@ -1,6 +1,6 @@
 +++
 title = "Finite Dimensional Vector Spaces:="
-tags = ["mathematics", "linear algebra"]
+tags = ["linear algebra"]
 +++
 
 sdjfskjdfh
