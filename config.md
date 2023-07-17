@@ -22,7 +22,7 @@ rss_full_content = false
 @def hascode = true
 @def prepath = ""
 @def website_title = "0xhound" 
-@def website_url = "https://overoxidized.github.io/overoxidized"
+@def website_url = "https://overoxidized.github.io/"
 <!--
 Add here global latex commands to use throughout your pages.
 -->
