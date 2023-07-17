@@ -1,4 +1,4 @@
-Sitemap: https://overoxidized.github.io/overoxidized/sitemap.xml
+Sitemap: https://overoxidized.github.io/sitemap.xml
 
 User-agent: *
 Disallow:
