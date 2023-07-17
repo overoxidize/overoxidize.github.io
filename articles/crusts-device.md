@@ -1,6 +1,6 @@
 +++
 title = "Crust's Device (WIP)"
-tags= ["rust", "C"]
+tags= ["Rust_Article", "C"]
 +++
 
 \toc

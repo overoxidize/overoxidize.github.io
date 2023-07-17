@@ -17,6 +17,10 @@ tags = ["syntax", "code"]
 
 ### [On The (Abridged) History of Linux](/articles/abridged-history-linux/)
 
+### [On Dirac: Glory From Perserverance](/articles/on-dirac-glory-perserverance/)
+
+### [In Search of Hammings Greatness](/articles/hamming-greatness/)
+
 ## Notes
 
 ### [Proof the Intersection of Subspaces of V is a Subspace of V](/textbook-notes/math-textbooks/linear-algebra-done-right/proof-of-subspaces/)

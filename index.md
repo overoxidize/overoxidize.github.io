@@ -1,6 +1,6 @@
 @def title = "0xhound"
 @def hascode = "true"
-# Def. $\mathcal{O}$veroxidize: A blog, wherein I will study, learn, rant and experiment about/with the things that interest him, as if they are the most interesting things in the world- _because they are_.
+# Def. $\mathcal{O}$veroxidize: A blog, wherein I will study, learn, rant and experiment about/with the things that interest me, as if they are the most interesting things in the world- _because they are_.
 
 This place will probably be stub/styling/formatting hell for *a while/ever*, as I'm collating rather large set of notes and pieces of writing from a number of platforms/mediums, while also preparing new material: I could probably hide this and only published finished pieces (which I do sometimes), but mayhaps it's you enjoy the progression.
 
